@@ -22,6 +22,12 @@ const animeSchema = mongoose.Schema({
         default: "?",
         require: true
     },
+    UrlFoto: {
+        type: String,
+        unique: true,
+        default: "https://i.pinimg.com/736x/61/15/dc/6115dc1ecc7d78d9ff510b354c2c51e2.jpg",
+        require: true
+    },
     FechaCreación: {
         type: Date,
         default: new Date()
